@@ -1,0 +1,22 @@
+:root {
+    --black: #000;
+    --white: #fff;
+    --text-blue: #4BC1E4;
+
+    --button-color: #4BC1E4;
+
+    --card-bg: #060606;
+
+    --icon: #4BC1E4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
