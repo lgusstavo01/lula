@@ -1,0 +1,98 @@
+.box {
+  background-color: var(--black);
+  background: radial-gradient(circle at center, #00e6e6, #000 40%);
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+
+  color: var(--white);
+
+  padding: 5rem 0;
+
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.container.fade-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.textContainer {
+  text-align: center;
+
+  margin-bottom: 5rem;
+}
+
+.textContainer h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.boxSwiper {
+  max-width: 90%;
+}
+
+.swiperText img {
+  height: 1rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 4rem;
+}
+
+.links a {
+  width: 40%;
+  box-shadow: initial;
+  box-shadow: 0px 0px 40px var(--orange);
+
+  font-size: 1.6rem;
+
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+
+  background-color: var(--button-color);
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+
+  transition: background-color 0.2s, transform 0.8s, letter-spacing 0.8s;
+}
+
+.links a:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  letter-spacing: 0.3rem;
+}
+
+.links a:visited {
+  text-decoration: none;
+  color: var(--black);
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .textContainer {
+    margin-top: 5rem;
+  }
+
+  .textContainer h2 {
+    font-size: 2rem;
+  }
+
+  .links a {
+    width: 87%;
+  }
+}

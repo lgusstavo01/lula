@@ -1,0 +1,86 @@
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+  }
+  
+  .container {
+    color: var(--white);
+    max-width: 80rem;
+  
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .accordion {
+    background-color: transparent !important;
+    color: var(--white) !important;
+  }
+  
+  .title {
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 3rem;
+  }
+  
+  .title h2 {
+    margin-top: 3rem;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+  }
+  
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: var(--white);
+  
+    background-color: var(--button-color);
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+  
+    transition: background-color 0.2s;
+  }
+  
+  .links a:hover {
+    background-color: var(--button-color-hover);
+    cursor: pointer;
+  }
+  
+  .links a:visited {
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  @media screen and (max-width: 1280px) {
+    .box {
+      max-width: 100%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .box {
+      flex-direction: column;   
+    }
+  
+    .container {
+      flex-direction: column;
+    }
+  
+    .container img {
+      display: none;
+    }
+  
+    .title {
+      font-size: 1.3rem;
+    }
+  }
+  

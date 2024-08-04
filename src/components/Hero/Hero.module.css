@@ -6,11 +6,20 @@
   max-width: 80rem;
   margin: 0 auto;
 
-    color: white;
+  color: white;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 3s ease-out, transform 5s ease-out;
+}
+
+.container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .infos {
@@ -46,6 +55,12 @@
 
   transition: all;
   transition-duration: 0.4s;
+}
+
+.infos button a,
+.infos button a:visited {
+  text-decoration: none;
+  color: var(--black);
 }
 
 .infos button:hover {
